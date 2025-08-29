@@ -1,0 +1,2 @@
+# Branch history capture (run this in the repo root)
+git log --decorate --oneline --graph --all > branch_history.txt
