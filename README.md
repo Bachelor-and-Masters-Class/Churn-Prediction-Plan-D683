@@ -1,6 +1,6 @@
 **Overview**
 
-This repository contains my completed submission for **Task 2** of the WGU course **D684 – AI Optimization for Computer Scientists**.
+This repository contains my completed submission for **Task 2** of the WGU course **D684: AI Optimization for Computer Scientists**.
 
 Where Task 1 focused on the technical optimization of a model, Task 2 addresses the product development side of delivering an AI solution: translating an optimized model into a viable product, defining how it will be built and released, and planning for its behavior once it is in the hands of real users.
 
