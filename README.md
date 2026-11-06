@@ -1,16 +1,22 @@
-# AI Product Plan
+# Customer Churn Prediction Plan
 
-**WGU D684 · AI Optimization for Computer Scientists · Task 2**
+**WGU D683 · Advanced AI and ML · Task 1**
 
-Task 1 improved a model. This task plans how to turn that model into a real product that people can use. It's a written plan, not code.
+The project plan for a model that predicts which subscription customers are likely to cancel, so the business can step in before they leave.
 
-## What the plan covers
+## The plan
 
-- **The product:** who it's for, what problem it solves, and how success is measured.
-- **Requirements:** what it must do, plus speed, scale, reliability, security and ease of use.
-- **How it gets built:** an iterative process, because AI requirements change as you learn how the model behaves.
-- **Testing:** checks on the data, the model, the integration and user acceptance.
-- **After launch:** watching for model drift, when to retrain, and version control.
-- **Risk and ethics:** bias, fairness, privacy, transparency and regulations.
+- **Problem:** high customer churn raises costs, and without a prediction tool at-risk customers aren't spotted in time.
+- **Goal:** reach at least 80% AUC-ROC on test data, helping cut churn by 10% within 6 months.
+- **Data:** the Kaggle Telco Customer Churn dataset: 7,043 customers with tenure, contract type, monthly charges, payment method, services and a churn label.
+- **Models:** logistic regression, random forest and XGBoost, with feature importance and SHAP values to explain predictions.
+- **Scoring:** AUC-ROC, precision, recall and lift.
+- **Requirements:** take customer data in and give a churn risk score out, in under 2 seconds per customer, for at least 50,000 records.
+- **Risks:** class imbalance (handled with SMOTE and class weights), overfitting (cross-validation and regularization) and data quality (cleaning and input checks).
+- **Schedule:** 5 phases from Sept 1 to Oct 15, 2025: scoping, data prep, training, evaluation and final report.
 
-**Topics:** product requirements, development lifecycle, ML testing, deployment and monitoring, AI ethics
+## Files
+
+- `1793936712105_Advanced_AIML_Topic_Approval_Form.pdf`: the signed topic approval form
+
+**Built with:** Python, scikit-learn, XGBoost, pandas, TensorFlow, Jupyter, Google Colab
